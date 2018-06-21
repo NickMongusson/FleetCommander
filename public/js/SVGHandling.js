@@ -1,4 +1,5 @@
 function replaceText() {
+    // https://benfrain.com/selecting-svg-inside-tags-with-javascript/
 
     console.log("I've been called ");
     // Get the Object by ID
