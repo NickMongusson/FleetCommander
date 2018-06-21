@@ -5,10 +5,17 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Map intel</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+
+        <script async src="{{ URL::asset('js/SVGHandling.js') }}"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script type="text/javascript">
+            window.onload = replaceText();
+        </script>
 
         <!-- Styles -->
         <style>
@@ -70,5 +77,6 @@
         <object id="svg_object" width="1024" height="768" data="{{ URL::asset('svg/Immensea.svg') }}" type="image/svg+xml">
             No SVG support
         </object>
+
     </body>
 </html>
