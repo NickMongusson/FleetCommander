@@ -14,7 +14,9 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
         <script type="text/javascript">
-            window.onload = replaceText();
+            $(document).ready(function(){
+            replaceText();
+            });               
         </script>
 
         <!-- Styles -->
@@ -74,7 +76,7 @@
     <body>
         <h1>Immensea</h1>
 
-        <object id="svg_object" width="1024" height="768" data="{{ URL::asset('svg/Immensea.svg') }}" type="image/svg+xml">
+        <object id="svgObject" width="1024" height="768" data="{{ URL::asset('svg/Immensea.svg') }}" type="image/svg+xml">
             No SVG support
         </object>
 
