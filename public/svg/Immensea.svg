@@ -4,16 +4,6 @@
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <?xml-stylesheet type="text/css" href="style.css"?>
 
-<!-- <svg version="1.1"
-     id="svgdoc"
-     xmlns="http://www.w3.org/2000/svg"
-     xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="1024" height="768"
-     viewBox="0 0 1024 768"
-     style="background: #ffffff"
-     onload="init(evt)"
-> -->
-
 <svg version="1.1"
      id="svgdoc"
      xmlns="http://www.w3.org/2000/svg"
@@ -21,38 +11,10 @@
      width="1024" height="768"
      viewBox="0 0 1024 768"
      style="background: #ffffff"
+     onload="init(evt)"
 >
 
 <g id="map">
-<!-- g id="legend">
-<rect x="860.5" y="575.5" width="160" height="188" class="lb" />
-<rect x="860.5" y="860.5" width="160" height="20" class="lbt" />
-<text x="942.5" y="590.5" class="lt" text-anchor="middle">Immensea</text>
-<rect x="860.5" y="595.5" width="160" height="148" class="lb" />
-<rect x="860.5" y="743.5" width="160" height="20" class="lb" />
-<text x="942.5" y="757.5" class="lc" text-anchor="middle"> 	&#169; by Wollari &amp; CCP</text>
-
-<rect x="875" y="600" rx="11" ry="11" width="50" height="22"  class="s" style="fill: #FFFFFF;" /><text x="900" y="611" class="ss" text-anchor="middle">XXXXX</text><text x="900" y="618.7" class="st so" text-anchor="middle">YYYYY (Z)</text>
-<rect x="920.6" y="605.5" height="11" width="11" class="o" /><polygon points="922.8,611 929.4,607.7 929.4,614.3 922.8,611"  class="o1" /><rect x="920.6" y="605.5" height="11" width="11"  class="oo" />
-<text x="877" y="639.4" class="l" text-anchor="start">X</text><text x="890" y="639.4" class="l" text-anchor="start">= System</text>
-<text x="877" y="654.8" class="l" text-anchor="start">Y</text><text x="890" y="654.8" class="l" text-anchor="start">= Alliance</text>
-<text x="877" y="670.2" class="l" text-anchor="start">Z</text><text x="890" y="670.2" class="l" text-anchor="start">= Sov. Lvl</text>
-<rect x="874" y="679.8" height="11" width="11" class="o" /><polygon points="876.2,685.3 882.8,682 882.8,688.6 876.2,685.3"  class="o1" /><rect x="874" y="679.8" height="11" width="11"  class="oo" /><text x="890" y="687.8" class="l" text-anchor="start">= Outpost</text>
-<rect x="874" y="695.2" height="11" width="11" class="o" /><rect x="877.3" y="698.5" height="4.4" width="4.4" class="o2" /><rect x="874" y="695.2" height="11" width="11"  class="oo" /><text x="890" y="703.2" class="l" text-anchor="start">= Cq Stat.</text>
-<rect x="874" y="710.6" height="11" width="11" class="o" /><rect x="874" y="710.6" height="11" width="11"  class="oo" /><text x="890" y="718.6" class="l" text-anchor="start">= NPC Stat.</text>
-<rect x="872" y="726" rx="5.5" ry="5.5" width="15.4" height="11" class="i" /><text x="890" y="734" class="l" text-anchor="start">= Icebelt</text>
-
-<rect x="947" y="603" height="11" width="11" class="om" /><polygon points="949.2,608.5 955.8,605.2 955.8,611.8 949.2,608.5"  class="o1" /><rect x="947" y="603" height="11" width="11"  class="oo" /><text x="963" y="611" class="l" text-anchor="start">= Refinery</text>
-<rect x="947" y="618.4" height="11" width="11" class="oa" /><polygon points="949.2,623.9 955.8,620.6 955.8,627.2 949.2,623.9"  class="o1" /><rect x="947" y="618.4" height="11" width="11"  class="oo" /><text x="963" y="626.4" class="l" text-anchor="start">= Factory</text>
-<rect x="947" y="633.8" height="11" width="11" class="oc" /><polygon points="949.2,639.3 955.8,636 955.8,642.6 949.2,639.3"  class="o1" /><rect x="947" y="633.8" height="11" width="11"  class="oo" /><text x="963" y="641.8" class="l" text-anchor="start">= Research</text>
-<rect x="947" y="649.2" height="11" width="11" class="og" /><polygon points="949.2,654.7 955.8,651.4 955.8,658 949.2,654.7"  class="o1" /><rect x="947" y="649.2" height="11" width="11"  class="oo" /><text x="963" y="657.2" class="l" text-anchor="start">= Offices</text>
-<rect x="947" y="664.6" height="11" width="11" class="o" /><polygon points="947,664.6 958,664.6 952.5,670.1 947,664.6" class="v1" /><rect x="947" y="664.6" height="11" width="11"  class="oo" /><text x="963" y="672.6" class="l" text-anchor="start">= Refining</text>
-<rect x="947" y="680" height="11" width="11" class="o" /><polygon points="958,691 952.5,685.5 947,691 958,691" class="v3" /><rect x="947" y="680" height="11" width="11"  class="oo" /><text x="963" y="688" class="l" text-anchor="start">= Industry</text>
-<rect x="947" y="695.4" height="11" width="11" class="o" /><polygon points="947,706.4 952.5,700.9 947,695.4 947,706.4" class="v4" /><rect x="947" y="695.4" height="11" width="11"  class="oo" /><text x="963" y="703.4" class="l" text-anchor="start">= Research</text>
-<rect x="947" y="710.8" height="11" width="11" class="o" /><polygon points="958,710.8 952.5,716.3 958,721.8 958,710.8" class="v2" /><rect x="947" y="710.8" height="11" width="11"  class="oo" /><text x="963" y="718.8" class="l" text-anchor="start">= Cloning</text>
-<rect x="945" y="726.2" rx="5.5" ry="5.5" width="15.4" height="11" class="sl" style="fill: #ffa0ff;" /><text x="963" y="734.2" class="l" text-anchor="start">= Contested</text>
-
-</g -->
 
 <defs>
   <symbol id="def30002131">
@@ -954,31 +916,15 @@
 
 </g>
 
-<g id="highlights">
-
 </g>
 
-<g id="notes"></g>
-
-<g id="standings"></g>
-
-</g>
-<!-- <g id="controls" style="display: none;">
-  <a xlink:title="Zoom In"><image id="zoom_in" x="5" y="5" width="16" height="16" xlink:href="http://i.dotlan.net/images/icons/magnifier_zoom_in.png" style="cursor: pointer;"/></a>
-  <a xlink:title="Zoom Out"><image id="zoom_out" x="5" y="23" width="16" height="16" xlink:href="http://i.dotlan.net/images/icons/magnifier_zoom_out.png" style="cursor: pointer;"/></a>
-  <a xlink:title="Enable Mousewheel Support"><image id="wheel_on" x="5" y="42" width="16" height="16" xlink:href="http://i.dotlan.net/images/icons/mouse_add.png" style="cursor: pointer;"/> </a>
-  <a xlink:title="Disable Mousewheel Support"><image id="wheel_off" x="5" y="42" width="16" height="16" xlink:href="http://i.dotlan.net/images/icons/mouse_delete.png" style="cursor: pointer; display: none;"/></a>
-</g> -->
-
-
-<!-- <script type="text/javascript" xlink:href="http://s.dotlan.net/lib/dotSvg.js?1526085868"></script>
+<script type="text/javascript" xlink:href="../js/SVGHandling.js"></script>
 <script type="text/javascript"><![CDATA[
 
 function init(E) {
 	SVGMap.init(E);
 }
 
-]]></script> -->
-
+]]></script>
 
 </svg>
