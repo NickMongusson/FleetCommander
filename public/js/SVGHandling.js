@@ -21,7 +21,16 @@ var SVGMap = {
         //console.log(element);
 
         //SVG.select('text.st')
-        SVG.select('rect.s').fill('#FFFFFF');
+        var set = SVG.select('rect.s');
+        set.each(function(i) {
+            this.style('fill:#FFFFFF;');
+        });
+
+        set = SVG.select('text.st');
+        set.each(function(i) {
+            this.node.textContent = '';
+        });
+        //alert (set);
 
         //$('#txt30002131').node.textContent = 'cleaned';
     }
