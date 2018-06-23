@@ -919,11 +919,13 @@
 </g>
 
 <script type="text/javascript" xlink:href="../js/SVGHandling.js"></script>
+
 <script type="" xlink:href="../js/svg.min.js"></script>
 <script type="text/javascript"><![CDATA[
 
 function init(E) {
 	SVGMap.init(E);
+  SVGMap.cleanMap();
 }
 
 ]]></script>

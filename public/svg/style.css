@@ -29,8 +29,8 @@
 .scl	{ stroke: transparent; stroke-width: 2; fill: transparent; }
 
 /* system text */
-.ss	{ font-family: verdana, Arial, sans-serif; font-size: 9px; fill: #000000; }
-.st	{ font-weight: bold; font-size: 7px; font-family: verdana, Arial, sans-serif; fill: #000000; }
+.ss	{ font-family: 'Raleway', verdana, Arial, sans-serif; font-size: 9px; fill: #000000; }
+.st	{ font-weight: bold; font-size: 7px; font-family: 'Raleway', verdana, Arial, sans-serif; fill: #000000; }
 .so	{ fill: #ff0000; }
 .i	{ stroke: #0080FF; stroke-width: 1; fill: none; }
 
