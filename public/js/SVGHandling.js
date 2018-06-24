@@ -4,11 +4,17 @@
 
 var SVGMap = {
     doc: false,
+
+    /**
+     * 
+     */
     init: function(e) {
         this.doc = e.target.ownerDocument;
-
     },
 
+    /**
+     * 
+     */
     cleanMap: function() {
         var systems = SVG.select('a.sys');
         systems.each(function(i) {
