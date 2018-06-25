@@ -2,20 +2,23 @@
  * Library used: SVG.js http://svgjs.com/
  */
 
-var SVGMap = {
-    doc: false,
+ class MapHandling {
+     constructor() {
+     }
 
-    /**
-     * 
-     */
-    init: function(e) {
-        this.doc = e.target.ownerDocument;
-    },
+     get doc() {
+         return this._dock;
+     }
 
-    /**
-     * 
-     */
-    cleanMap: function() {
+     set doc(value) {
+        this._dock = value;
+     }
+
+     init(e) {
+         this.dock = e.target.ownerDocument;
+     }
+
+     cleanMap() {
         var systems = SVG.select('a.sys');
         systems.each(function(i) {
             console.log(this);
@@ -32,5 +35,5 @@ var SVGMap = {
         set.each(function(i) {
             this.node.textContent = '';
         });
-    }
-}
+     }
+ }

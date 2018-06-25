@@ -919,8 +919,10 @@
 
 <script type="" xlink:href="../js/svg.min.js"></script>
 <script type="text/javascript"><![CDATA[
-
+ var SVGMap = new MapHandling();
+ 
 function init(E) {
+
 	SVGMap.init(E);
   SVGMap.cleanMap();
 }

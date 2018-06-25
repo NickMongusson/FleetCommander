@@ -10,11 +10,12 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
-        <script async src="{{ URL::asset('js/SVGHandling.js') }}"></script>
+        {{-- <script src="{{ URL::asset('js/SVGHandling.js') }}"></script> --}}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="{{ URL::asset('js/svg.min.js') }}"></script>
 
         <script type="text/javascript">
+
             $(document).ready(function(){
                 //replaceText();
             });               
